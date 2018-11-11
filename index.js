@@ -19,9 +19,11 @@ module.exports =
 
     log: function(message)
     {
+        this.options || this.config({})
+        
         var fs = require('fs'), loginfo
           , logfile = this.options.file
-          , message = this.format( '' + message )
+          , message = this.options.format( '' + message )
           , loginfo = function()
           {
             var cb = function()
