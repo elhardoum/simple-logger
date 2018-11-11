@@ -2,10 +2,16 @@
 
 This is a simple logger designed to log messages to your specified log file, which comes with log rotation support, allowing you to rotate the main log file after it gets larger, as well as keeping only the most recent rotated logs by setting a max file value for that.
 
+## Install
+
+```bash
+npm install simple-logger-node --save-dev
+```
+
 ## Usage
 
 ```javascript
-const log = require('./index')
+const log = require('simple-logger-node')
 
 const debug = function(message)
 {
@@ -27,7 +33,7 @@ debug( JSON.stringify( {log: 1, me: 2} ) )
 This simple logger comes with optional configuration setting:
 
 ```javascript
-const log = require('./log').config({
+const log = require('simple-logger-node').config({
     // where to save logs
     file: __dirname + '/info.log',
 

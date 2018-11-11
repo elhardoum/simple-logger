@@ -1,0 +1,24 @@
+{
+  "name": "simple-logger-node",
+  "version": "1.0.0",
+  "description": "Simple node.js logger with log rotation support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhardoum/simple-logger.git"
+  },
+  "keywords": [
+    "log",
+    "log-rotate",
+    "debug"
+  ],
+  "author": "elhardoum",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/elhardoum/simple-logger/issues"
+  },
+  "homepage": "https://github.com/elhardoum/simple-logger#readme"
+}
